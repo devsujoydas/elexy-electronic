@@ -5,8 +5,12 @@ import { BsCart3 } from "react-icons/bs";
 import { GoLocation } from "react-icons/go";
 import { FaLocationCrosshairs } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
+import { useState } from "react";
 
 const Header = () => {
+
+    const [search, setSearch] = useState(false);
+
     return (
         <div className="">
             {/* header  */}
@@ -45,46 +49,54 @@ const Header = () => {
 
             {/* navbar  */}
             <nav className="max-w-7xl mx-auto flex justify-between items-center pt-8 pb-5 ">
-                <div className="">
+                <Link to={''} className="active:scale-95 transition-all">
                     <img src="/public/assets/lgo.png" alt="" />
-                </div>
+                </Link>
                 <div className="font-inter flex gap-8">
-                    <Link to={'/'} className="hover:text-gray-300 transition-all">Home</Link>
+                    <Link to={'/'} className="hover:text-gray-300 active:scale-95 transition-all">Home</Link>
                     <div className="flex justify-center items-end gap-2">
-                        <Link className="hover:text-gray-300 transition-all">Shop</Link>
+                        <Link className="hover:text-gray-300 active:scale-95 transition-all">Shop</Link>
                         <IoIosArrowDown />
                     </div>
                     <div className="flex justify-center items-end gap-2">
-                        <Link className="hover:text-gray-300 transition-all">Products</Link>
+                        <Link className="hover:text-gray-300 active:scale-95 transition-all">Products</Link>
                         <IoIosArrowDown />
                     </div>
                     <div className="flex justify-center items-end gap-2">
-                        <Link className="hover:text-gray-300 transition-all">Pages</Link>
+                        <Link className="hover:text-gray-300 active:scale-95 transition-all">Pages</Link>
                         <IoIosArrowDown />
                     </div>
-                    <Link className="hover:text-gray-300 transition-all">Contact</Link>
-
+                    <Link className="hover:text-gray-300 active:scale-95 transition-all">Contact</Link>
                 </div>
-                <div className="text-2xl flex gap-2">
-                    <button className="hover:text-gray-300 transition-all">
-                        <button><FiSearch /></button>
+                <div className="text-2xl flex gap-4">
+                    <button onClick={()=>{setSearch(!search)}} className="hover:text-gray-300 active:scale-95 cursor-pointer transition-all">
+                        <FiSearch />
                     </button>
-                    <button className="hover:text-gray-300 transition-all">
-                        <button><FaRegHeart /></button>
+                    <button className="hover:text-gray-300 active:scale-95 cursor-pointer transition-all">
+                        <FaRegHeart />
                     </button>
-                    <button className="hover:text-gray-300 transition-all">
-                        <button><BsCart3 /></button>
+                    <button className="hover:text-gray-300 active:scale-95 cursor-pointer transition-all">
+                        <BsCart3 />
                     </button>
+
                     <span className="border border-gray-400 mx-2"></span>
-                    <div className="cursor-pointer flex justify-center items-center gap-1">
+
+                    <button className="cursor-pointer active:scale-95 transition-all flex justify-center items-center gap-1">
                         <img className="bg-gray-300 rounded-full h-10 w-10" src="" alt="" />
                         <div className="font-open-sans">
                             <p className="text-xs text-gray-300">Hi, Sujoy Das</p>
                             <p className="text-[15px]">My Account</p>
                         </div>
-                    </div>
+                    </button>
                 </div>
             </nav>
+            {search && <div className="bg-gray-700 min-h-28 flex justify-center items-center">
+                <div className="relative ">
+                    <input type="text" className="border rounded-xl px-10 w-md py-4 " placeholder="Search Product Here" />
+                    <button className="bg-[#B4976C] flex justify-center items-center gap-2 absolute cursor-pointer active:scale-95 transition-all font-medium hover:bg-gray-500 top-2 right-2 rounded-full py-2 px-5"><FiSearch />Search</button>
+                </div>
+            </div>
+            }
         </div>
     )
 }
