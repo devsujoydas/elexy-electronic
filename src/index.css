@@ -1,1 +1,43 @@
-@import "tailwindcss";
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+@import 'tailwindcss';
+
+.font-open-sans {
+  font-family: 'Open Sans', serif;
+}
+.font-inter {
+  font-family: 'Inter', serif;
+}
+
+.hero-bg-1 {
+  background-image: url('./../public/assets/home-page-3-hero.png');
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg-2 {
+  background-image: url('./../public/assets/home-page-3-hero-2.png');
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg-3 {
+  background-image: url('./../public/assets/home-page-3-hero-3-3.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-bg-mobile-1 {
+  background-image: url('./../public/assets/home-page-3-hero-mobile.png');
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg-mobile-2 {
+  background-image: url('./../public/assets/home-page-3-1-hero-mobile.png');
+  background-size: cover;
+  background-position: center;
+}
+.hero-bg-mobile-3 {
+  background-image: url('./../public/assets/home-page-3-2-hero-mobile.png');
+  background-size: cover;
+  background-position: center;
+}
+
+
