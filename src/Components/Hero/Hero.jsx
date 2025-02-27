@@ -35,8 +35,8 @@ const Hero = () => {
               <h1 className='text-7xl font-semibold'>Next generation <br /> Virtual reality</h1>
               <p className='text-xl'>VR is the most quick access to notifications, calls, messages, <br /> apps right on your wrist, reducting the constantly check.</p>
               <div className='text-md font-medium'>
-                <button className='px-7 py-3 border rounded-full cursor-pointer hover:-translate-y-1 transition-all bg-[#B4976C] mr-5 hover:bg-gray-300 hover:textblack'>Buy Now</button>
-                <button className='px-7 py-3 border rounded-full cursor-pointer hover:-translate-y-1 transition-all '>View More</button>
+                <button className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all bg-[#B4976C] mr-5 hover:bg-gray-300 hover:textblack'>Buy Now</button>
+                <button className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all '>View More</button>
               </div>
             </div>
           </div>
@@ -50,8 +50,8 @@ const Hero = () => {
               <p className='text-xl'>Smartwatches provide quick access to notifications, calls, messages, and <br />
               apps right on your wrist, reducing the constantly check your phone.</p>
               <div className='text-md font-medium'>
-                <button className='px-7 py-3 border rounded-full cursor-pointer hover:-translate-y-1 transition-all bg-[#B4976C] mr-5 hover:bg-gray-300 hover:textblack'>Pre Order</button>
-                <button className='px-7 py-3 border rounded-full cursor-pointer hover:-translate-y-1 transition-all'>View More</button>
+                <button className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all bg-[#B4976C] mr-5 hover:bg-gray-300 hover:textblack'>Pre Order</button>
+                <button className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all'>View More</button>
               </div>
             </div>
           </div>
@@ -64,8 +64,8 @@ const Hero = () => {
               <h1 className='text-7xl font-semibold'>Next generation <br /> Virtual reality</h1>
               <p className='text-xl'>VR is the most quick access to notifications, calls, messages, <br /> apps right on your wrist, reducting the constantly check.</p>
               <div className='text-md font-medium'>
-                <button className='px-7 py-3 border rounded-full cursor-pointer hover:-translate-y-1 transition-all bg-[#B4976C] hover:bg-gray-300 hover:textblack mr-5 '>Buy Now</button>
-                <button className='px-7 py-3 border rounded-full cursor-pointer hover:-translate-y-1 transition-all'>View More</button>
+                <button className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all bg-[#B4976C] hover:bg-gray-300 hover:textblack mr-5 '>Buy Now</button>
+                <button className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all'>View More</button>
               </div>
             </div>
           </div>

@@ -1,14 +1,14 @@
 
 const Category = () => {
     return (
-        <div className=" bg-[#333333]">
-            <div className="w-7xl mx-auto text-center py-30 grid gap-5">
+        <div className=" bg-[#333333] px-10">
+            <div className="lg:w-7xl mx-auto text-center py-30 grid gap-5">
                 <h1 className="text-4xl font-open-sans font-bold">Choose your Category</h1>
 
-                <p className="text-xl text-gray-300 ">Smartwatches provide quick access to notifications, calls, messages, and
+                <p className="md:text-xl text-gray-300 ">Smartwatches provide quick access to notifications, calls, messages, and
                     <br /> apps right on your wrist, reducing the constantly check your phone.</p>
 
-                <div className="grid grid-cols-5 mt-10 gap-5 font-open-sans">
+                <div className="grid grid-cols-2 lg:grid-cols-5 mt-10 gap-5 font-open-sans">
                     <div className="grid gap-2 cursor-pointer">
                         <div className="rounded-full overflow-hidden">
                             <img className=" hover:scale-110 duration-500 transition-all" src="/public/assets/Rectangle_395.png" alt="" />

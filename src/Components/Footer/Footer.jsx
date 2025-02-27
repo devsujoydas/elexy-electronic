@@ -7,19 +7,19 @@ import { FaPinterest } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-[#121212] min-h-[60vh] ">
+    <div className="bg-[#121212] min-h-[60vh] px-10">
       <div className="max-w-7xl mx-auto">
-        <div className="flex justify-between items-center">
-          <h1 className="text-5xl font-semibold py-20 font-open-sans">Subscribe our Newsletter and get <br /> all of our update</h1>
-          <div className="relative ">
-            <input type="text" className="border rounded-full px-10 w-md py-6 " placeholder="Enter Email" />
-            <button className="bg-[#B4976C] absolute top-2 right-2 rounded-full py-4 px-5">Submit Now</button>
+        <div className="flex flex-col lg:flex-row justify-between items-center">
+          <h1 className="md:text-5xl text-xl font-semibold md:py-20 py-10 font-open-sans">Subscribe our Newsletter and get <br /> all of our update</h1>
+          <div className="relative pb-10 md:pb-0">
+            <input type="text" className="border rounded-full px-10 lg:w-md md:py-6 py-3" placeholder="Enter Email" />
+            <button className="bg-[#B4976C] absolute top-2 right-2 active:scale-95 transition-all rounded-full py-4 cursor-pointer px-5">Submit Now</button>
           </div>
         </div>
 
         <hr />
 
-        <div className="grid grid-cols-5 py-20 font-inter" id="footer-manu">
+        <div className="grid grid-cols-2 gap-10 lg:grid-cols-5 md:py-20 py-10 font-inter" id="footer-manu">
 
           <div className="flex flex-col gap-2">
             <h1 className="text-gray-400 text-xl">Quick Links</h1>
@@ -87,15 +87,15 @@ const Footer = () => {
       </div>
 
       <div className="border-t border-gray-600 py-5 font-inter">
-        <div className=" flex justify-between max-w-7xl mx-auto">
-          <h1>© 2025, Elexy Store By <a href="https://www.facebook.com/sujoydas36">Sujoy Das</a></h1>
-          <div className="flex gap-2">
-            <img src="/public/assets/payment/paypal.svg" alt="" />
-            <img src="/public/assets/payment/download (11).svg" alt="" />
-            <img src="/public/assets/payment/download (12).svg" alt="" />
-            <img src="/public/assets/payment/download (14).svg" alt="" />
-            <img src="/public/assets/payment/download (15).svg" alt="" />
-            <img src="/public/assets/payment/download (16).svg" alt="" />
+        <div className=" flex flex-col gap-2 lg:flex-row justify-between max-w-7xl mx-auto">
+          <h1 className="">© 2025, Elexy Store By <a href="https://www.facebook.com/sujoydas36">Sujoy Das</a></h1>
+          <div className="flex justify-between gap-2">
+            <img className="w-2xl" src="/public/assets/payment/paypal.svg" alt="" />
+            <img className="w-2xl" src="/public/assets/payment/download (11).svg" alt="" />
+            <img className="w-2xl" src="/public/assets/payment/download (12).svg" alt="" />
+            <img className="w-2xl" src="/public/assets/payment/download (14).svg" alt="" />
+            <img className="w-2xl" src="/public/assets/payment/download (15).svg" alt="" />
+            <img className="w-2xl" src="/public/assets/payment/download (16).svg" alt="" />
           </div>
         </div>
       </div>

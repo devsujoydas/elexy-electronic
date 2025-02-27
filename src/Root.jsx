@@ -3,6 +3,7 @@ import Header from './Components/Header/Header'
 import Footer from './Components/Footer/Footer'
 import Hero from './Components/Hero/Hero.jsx'
 import Category from './Components/Category/Category'
+import Recommended from './Components/Recommended/Recommended.jsx'
 function Root() {
 
   return (
@@ -11,6 +12,7 @@ function Root() {
         <Header />
         <Hero/>
         <Category/>
+        <Recommended/>
         <Footer />
       </div>
     </>
