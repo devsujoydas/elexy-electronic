@@ -1,135 +1,137 @@
 [
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/003.png?v=1715841941&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/002.png?v=1715841941&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/001.png?v=1715841941&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-1_fa8057c0-ac5b-4160-8d4e-a2c2f5f288bb.png?v=1713259772&width=990"
-    ],
-    "title": "Smart Phone 12",
-    "price": 1000,
-    "discountPrice":1200 ,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Black"
-  },
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-12_60283c72-82cf-430d-810e-fc9994a7f815.png?v=1713260001&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-13.png?v=1713260001&width=493"
-    ],
-    "title": "Maxoni Microwave Oven",
-    "price":148700 ,
-    "discountPrice":173500 ,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Silver"
-  },
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product9.png?v=1715494921&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-8.png?v=1713259560&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product9_6cca99c2-18ef-4a37-96ff-b22e29c080bb.png?v=1715495268&width=493"
-    ],
-    "title": "Ornex Blender",
-    "price": 148700,
-    "discountPrice": 173500,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Black"
-  },
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-3.png?v=1713259252&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-1_38830c3f-58bf-48fd-b7a8-2f23af0781d4.png?v=1713259252&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-5.png?v=1713259241&width=1100"
-    ],
-    "title": " LF 7 pro",
-    "price": 55800,
-    "discountPrice": 57800,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Silver"
-  },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/003.png?v=1715841941&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/002.png?v=1715841941&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/001.png?v=1715841941&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-1_fa8057c0-ac5b-4160-8d4e-a2c2f5f288bb.png?v=1713259772&width=990"
+      ],
+      "title": "Smart Phone 12",
+      "price": 1000,
+      "discountPrice": 1200,
+      "review": 4.7,
+      "instockQuantity": 15,
+      "color": "Blue",
+      "description": "The Smart Phone 12 is a high-performance device with cutting-edge technology, delivering a seamless user experience and stunning display quality.",
+      "status": "Sale"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-12_60283c72-82cf-430d-810e-fc9994a7f815.png?v=1713260001&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-13.png?v=1713260001&width=493"
+      ],
+      "title": "Maxoni Microwave Oven",
+      "price": 148700,
+      "discountPrice": 173500,
+      "review": 4.6,
+      "instockQuantity": 8,
+      "color": "Black",
+      "description": "The Maxoni Microwave Oven is designed for efficiency, offering fast and even heating, making your cooking experience convenient and effortless.",
+      "status": "Sale"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product9.png?v=1715494921&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-8.png?v=1713259560&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product9_6cca99c2-18ef-4a37-96ff-b22e29c080bb.png?v=1715495268&width=493"
+      ],
+      "title": "Ornex Blender",
+      "price": 148700,
+      "discountPrice": 173500,
+      "review": 4.8,
+      "instockQuantity": 5,
+      "color": "Red",
+      "description": "The Ornex Blender is a powerful kitchen tool with multiple speed settings, perfect for smoothies, sauces, and more.",
+      "status": "Sale"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-3.png?v=1713259252&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-1_38830c3f-58bf-48fd-b7a8-2f23af0781d4.png?v=1713259252&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-5.png?v=1713259241&width=1100"
+      ],
+      "title": "LF 7 Pro",
+      "price": 55800,
+      "discountPrice": 57800,
+      "review": 4.4,
+      "instockQuantity": 0,
+      "color": "Gray",
+      "description": "The LF 7 Pro is a sleek and powerful smartphone with advanced features for gaming, photography, and day-to-day use.",
+      "status": "Sold Out"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-7.png?v=1713259596&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-15.png?v=1713259603&width=493",
+        ""
+      ],
+      "title": "Xonic CC Camera",
+      "price": 13700,
+      "discountPrice": 15700,
+      "review": 4.3,
+      "instockQuantity": 10,
+      "color": "White",
+      "description": "The Xonic CC Camera delivers high-resolution images and videos, perfect for professional and casual photography.",
+      "status": "Sale"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-6_4bd5564d-d06c-49c1-9c9a-60c4a9d846ff.png?v=1719309150&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-3_de074cb9-7d29-4a84-92ef-180a1dbad354.png?v=1719309178&width=1100"
+      ],
+      "title": "Mango Router",
+      "price": 28500,
+      "discountPrice": 30500,
+      "review": 4.2,
+      "instockQuantity": 25,
+      "color": "Black",
+      "description": "The Mango Router ensures a stable and fast internet connection with enhanced security features.",
+      "status": "Sale"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-8.png?v=1713259560&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-12.png?v=1713259560&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-14.png?v=1713259560&width=1100"
+      ],
+      "title": "Olex Water Purifier",
+      "price": 39700,
+      "discountPrice": 45000,
+      "review": 4.7,
+      "instockQuantity": 18,
+      "color": "Silver",
+      "description": "The Olex Water Purifier provides clean and safe drinking water with advanced filtration technology.",
+      "status": "Sale"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-5_4283d135-5920-475c-840b-6aadb6d29e40.png?v=1713259325&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/image-2_e1cb37e9-16c1-47cd-8ef0-e420da540395.png?v=1715840696&width=1100",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/image_5b284c5b-fbab-463e-af8a-e141a220ef13.png?v=1715840696&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-11_ed84a993-fd45-4e85-a944-6c37d991f260.png?v=1713259767&width=493"
+      ],
+      "title": "MacBook Pro (15-inch)",
+      "price": 93500,
+      "discountPrice": 124000,
+      "review": 4.9,
+      "instockQuantity": 0,
+      "color": "Space Gray",
+      "description": "The MacBook Pro (15-inch) is designed for professionals, offering top-tier performance, a stunning Retina display, and powerful battery life.",
+      "status": "Sold Out"
+    },
+    {
+      "img": [
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-2.png?v=1713259694&width=493",
+        "https://elexy-demo.myshopify.com/cdn/shop/files/product-10.png?v=1713259694&width=493"
+      ],
+      "title": "Zackpot Speaker",
+      "price": 11900,
+      "discountPrice": 13900,
+      "review": 4.5,
+      "instockQuantity": 30,
+      "color": "Green",
+      "description": "The Zackpot Speaker delivers high-quality sound with deep bass and wireless connectivity for ultimate convenience.",
+      "status": "Sale"
+    }
+  ]
   
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-7.png?v=1713259596&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-15.png?v=1713259603&width=493",
-      ""
-    ],
-    "title": "Xonic CC Camera",
-    "price": 13700,
-    "discountPrice": 15700,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Black"
-  },
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-6_4bd5564d-d06c-49c1-9c9a-60c4a9d846ff.png?v=1719309150&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-3_de074cb9-7d29-4a84-92ef-180a1dbad354.png?v=1719309178&width=1100"
-    ],
-    "title": "Mango Router",
-    "price": 28500,
-    "discountPrice": 30500,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Black"
-  },
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-8.png?v=1713259560&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-12.png?v=1713259560&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-14.png?v=1713259560&width=1100"
-    ],
-    "title": "Olex Water purifier",
-    "price": 39700,
-    "discountPrice":45000 ,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Gray"
-  },
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-5_4283d135-5920-475c-840b-6aadb6d29e40.png?v=1713259325&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/image-2_e1cb37e9-16c1-47cd-8ef0-e420da540395.png?v=1715840696&width=1100",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/image_5b284c5b-fbab-463e-af8a-e141a220ef13.png?v=1715840696&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-11_ed84a993-fd45-4e85-a944-6c37d991f260.png?v=1713259767&width=493"
-    ],
-    "title": "Mackbook pro (15inch)",
-    "price": 93500,
-    "discountPrice": 124000,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Black",
-    "discription":"As a leading product in the technology industry, the Mackbook Pro (15 inches) offers top-of-the-line features that are sure to enhance your work and personal life. With its sleek design and powerful performance capabilities, you'll experience a significant increase in productivity and efficiency. Join the countless satisfied customers and upgrade to the Mackbook Pro (15 inch) today."
-  },
-  {
-    "img": [
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-2.png?v=1713259694&width=493",
-      "https://elexy-demo.myshopify.com/cdn/shop/files/product-10.png?v=1713259694&width=493"
-    ],
-    "title": "Zackpot Speaker",
-    "price": 11900,
-    "discountPrice": 13900,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Gray",
-    "discription":"As a leading product in the technology industry, the Mackbook Pro (15 inches) offers top-of-the-line features that are sure to enhance your work and personal life. With its sleek design and powerful performance capabilities, you'll experience a significant increase in productivity and efficiency. Join the countless satisfied customers and upgrade to the Mackbook Pro (15 inch) today."
-  },
-  {
-    "img": [
-      "",
-      "",
-      ""
-    ],
-    "title": "",
-    "price": ,
-    "discountPrice": ,
-    "review": 4.5,
-    "instockQuantity": 20,
-    "color": "Gray"
-  },
-  
-]
