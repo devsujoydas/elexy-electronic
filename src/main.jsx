@@ -20,7 +20,7 @@ const router = createBrowserRouter([
         path:'/products',
         element:<Products/>,
         loader: fetch('/public/product.json')
-      },
+      }
     ]
   }
 ])

@@ -9,9 +9,7 @@ import { IoMdClose } from "react-icons/io";
 import { useState } from "react";
 
 const Header = () => {
-
     const [search, setSearch] = useState(false);
-
     return (
         <div className="relative">
             {/* header  */}
