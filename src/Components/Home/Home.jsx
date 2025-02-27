@@ -1,7 +1,14 @@
+import Hero from "../Hero/Hero.jsx"
+import Category from "../Category/Category.jsx"
+import Recommended from "../Recommended/Recommended.jsx"
 
 const Home = () => {
   return (
-    <div>Home</div>
+    <div>
+      <Hero />
+      <Category />
+      <Recommended />
+    </div>
   )
 }
 

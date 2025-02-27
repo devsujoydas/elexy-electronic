@@ -28,7 +28,7 @@ const Header = () => {
                             <p>Find a Store</p>
                         </button>
                         <div>
-                            <select name="" id="" className="hover:border-b cursor-pointer">
+                            <select defaultValue={'BDT'} name="" id="" className="hover:border-b cursor-pointer">
                                 <option value="AED">AED</option>
                                 <option value="AUD">AUD</option>
                                 <option value="BDT" selected>BDT</option>
@@ -38,7 +38,7 @@ const Header = () => {
                             </select>
                         </div>
                         <div>
-                            <select name="" id="" className="hover:border-b cursor-pointer">
+                            <select defaultValue={"En"} name="" id="" className="hover:border-b cursor-pointer">
                                 <option value="En">En</option>
                                 <option value="Bn">Bn</option>
                                 <option value="Fr">Fr</option>
@@ -60,7 +60,7 @@ const Header = () => {
                         <IoIosArrowDown />
                     </div>
                     <div className="flex justify-center items-end gap-2">
-                        <Link className="hover:text-gray-300 active:scale-95 transition-all">Products</Link>
+                        <Link to={"/products"} className="hover:text-gray-300 active:scale-95 transition-all">Products</Link>
                         <IoIosArrowDown />
                     </div>
                     <div className="flex justify-center items-end gap-2">

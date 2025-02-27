@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom"
 import Products from "../Products/Products"
 
 const Recommended = () => {
@@ -9,7 +10,7 @@ const Recommended = () => {
                     <p>Electronics products continue to drive innovation and shape the
                        <br /> way we live, work, and interact with our environment.</p>
                 </div>
-                <button className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all'>View More</button>
+                <Link to={'/products'} className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all'>View More</Link>
             </div>
 
             <div>

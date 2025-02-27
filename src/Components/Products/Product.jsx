@@ -2,8 +2,7 @@
 
 const Product = () => {
     return (
-        <div className="rounded-2xl border overflow-hidden">
-
+        <div className="rounded-2xl shadow shadow-white hover:-translate-y-1 transition-all duration-500 overflow-hidden">
             <button className="cursor-pointer grid gap-2 text-left">
                 <div className="overflow-hidden">
                     <img className="hover:scale-110 duration-500 transition-all" src="https://elexy-demo.myshopify.com/cdn/shop/files/001_360x.png?v=1715841941" alt="" />
