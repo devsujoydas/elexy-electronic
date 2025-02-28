@@ -16,9 +16,9 @@ const Header = () => {
         <div className="relative">
             {/* header  */}
             <div className=" bg-[#121212] text-gray-300 py-4 font-inter">
-                <div className="flex flex-col lg:flex-row justify-between max-w-7xl mx-auto">
-                    <p>Free Delivery on orders over $260</p>
-                    <div className="flex gap-3">
+                <div className="flex flex-col lg:flex-row md:justify-between max-w-7xl mx-auto">
+                    <p className="text-center">Free Delivery on orders over $260</p>
+                    <div className="flex gap-3 ">
                         <button className="flex gap-2 justify-center items-center cursor-pointer">
                             <FaLocationCrosshairs />
                             <p>Track your Order</p>
@@ -49,11 +49,12 @@ const Header = () => {
             </div>
 
             {/* navbar  */}
-            <nav className="max-w-7xl mx-auto flex flex-col lg:flex-row justify-between items-center pt-8 pb-5 ">
+            <nav className="max-w-7xl mx-auto gap-2 flex flex-col lg:flex-row justify-between items-center pt-8 pb-5 ">
                 <Link to={''} className="active:scale-95 transition-all">
                     <img src="/public/assets/lgo.png" alt="" />
                 </Link>
-                <div className="font-inter flex flex-col lg:flex-row gap-8">
+
+                <div className="font-inter flex gap-2 md:gap-8">
                     <Link to={'/'} className="hover:text-gray-300 active:scale-95 transition-all">Home</Link>
                     <div className="flex justify-center items-end gap-2">
                         <Link className="hover:text-gray-300 active:scale-95 transition-all">Shop</Link>
@@ -69,6 +70,7 @@ const Header = () => {
                     </div>
                     <Link className="hover:text-gray-300 active:scale-95 transition-all">Contact</Link>
                 </div>
+
                 <div className="text-2xl flex gap-4">
                     <button onClick={() => { setSearch(!search) }} className="hover:text-gray-300 active:scale-95 cursor-pointer transition-all">
                         <FiSearch />
