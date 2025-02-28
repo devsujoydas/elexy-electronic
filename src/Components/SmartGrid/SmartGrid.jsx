@@ -2,7 +2,7 @@
 const SmartGrid = () => {
     return (
         <div className='bg-white'>
-            <div className='w-7xl mx-auto py-20 grid lg:grid-cols-3 grid-cols-1 gap-7'>
+            <div className='md:w-7xl md:mx-auto mx-5 py-20 grid lg:grid-cols-3 grid-cols-1 gap-7'>
 
                 <div className='md:col-span-1 overflow-hidden rounded-2xl cursor-pointer relative'>
                     <img className=' hover:scale-110 duration-500 transition-all rounded-2xl' src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-1-image.png?v=1713851588&width=550" alt="" />
