@@ -5,28 +5,29 @@ import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Root from './Root.jsx'
 import Products from './Components/Products/Products.jsx'
 import Home from './Components/Home/Home.jsx'
+import AuthProvider from './Components/AuthProvider/AuthProvider.jsx'
 
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <Root />,
-    children:[
+    children: [
       {
-        path:'/',
-        element:<Home/>
+        path: '/',
+        element: <Home />
       },
       {
-        path:'/products',
-        element:<Products/>,
-        loader: fetch('/public/product.json')
+        path: '/products',
+        element: <Products />
       }
     ]
   }
 ])
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}>
-    </RouterProvider>
+    <AuthProvider>
+      <RouterProvider router={router} />
+    </AuthProvider>
   </StrictMode>,
 )

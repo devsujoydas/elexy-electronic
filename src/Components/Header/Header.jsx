@@ -10,6 +10,8 @@ import { useState } from "react";
 
 const Header = () => {
     const [search, setSearch] = useState(false);
+    const [taka, setTaka] = useState("BDT");
+    const [lang, setLang] = useState("En");
     return (
         <div className="relative">
             {/* header  */}
@@ -26,17 +28,17 @@ const Header = () => {
                             <p>Find a Store</p>
                         </button>
                         <div>
-                            <select defaultValue={'BDT'} name="" id="" className="hover:border-b cursor-pointer">
+                            <select  value={taka} onChange={(e) => setTaka(e.target.value)} name="" id="" className="hover:border-b cursor-pointer">
                                 <option value="AED">AED</option>
                                 <option value="AUD">AUD</option>
-                                <option value="BDT" selected>BDT</option>
+                                <option value="BDT">BDT</option>
                                 <option value="BTC">BTC</option>
                                 <option value="EUR">EUR</option>
                                 <option value="USD">USD</option>
                             </select>
                         </div>
                         <div>
-                            <select defaultValue={"En"} name="" id="" className="hover:border-b cursor-pointer">
+                            <select value={lang} onChange={(e) => setLang(e.target.value)}  name="" id="" className="hover:border-b cursor-pointer">
                                 <option value="En">En</option>
                                 <option value="Bn">Bn</option>
                                 <option value="Fr">Fr</option>
@@ -81,7 +83,7 @@ const Header = () => {
                     <span className="border border-gray-400 mx-2"></span>
 
                     <button className="cursor-pointer active:scale-95 transition-all flex justify-center items-center gap-1">
-                        <img className="bg-gray-300 rounded-full h-10 w-10" src="" alt="" />
+                        <img className="bg-gray-300 rounded-full h-10 w-10" alt="" />
                         <div className="font-open-sans">
                             <p className="text-xs text-gray-300">Hi, Sujoy Das</p>
                             <p className="text-[15px]">My Account</p>

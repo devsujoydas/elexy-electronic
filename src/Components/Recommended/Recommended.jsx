@@ -3,7 +3,8 @@ import Products from "../Products/Products"
 
 const Recommended = () => {
     return (
-        <div className="w-7xl grid gap-10 mx-auto py-20">
+        <div className="bg-[#333333]">
+            <div className="w-7xl  grid gap-10 mx-auto pb-10">
             <div className="flex justify-between items-end font-open-sans">
                 <div className="grid gap-3">
                     <h1 className="text-4xl font-bold ">Highly Recommended</h1>
@@ -16,6 +17,7 @@ const Recommended = () => {
             <div>
                 <Products/>
             </div>
+        </div>
         </div>
     )
 }

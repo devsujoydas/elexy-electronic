@@ -7,8 +7,8 @@
         "https://elexy-demo.myshopify.com/cdn/shop/files/product-1_fa8057c0-ac5b-4160-8d4e-a2c2f5f288bb.png?v=1713259772&width=990"
       ],
       "title": "Smart Phone 12",
-      "price": 1000,
-      "discountPrice": 1200,
+      "price": 130000,
+      "discountPrice": 150000,
       "review": 4.7,
       "instockQuantity": 15,
       "color": "Blue",
@@ -118,20 +118,6 @@
       "color": "Space Gray",
       "description": "The MacBook Pro (15-inch) is designed for professionals, offering top-tier performance, a stunning Retina display, and powerful battery life.",
       "status": "Sold Out"
-    },
-    {
-      "img": [
-        "https://elexy-demo.myshopify.com/cdn/shop/files/product-2.png?v=1713259694&width=493",
-        "https://elexy-demo.myshopify.com/cdn/shop/files/product-10.png?v=1713259694&width=493"
-      ],
-      "title": "Zackpot Speaker",
-      "price": 11900,
-      "discountPrice": 13900,
-      "review": 4.5,
-      "instockQuantity": 30,
-      "color": "Green",
-      "description": "The Zackpot Speaker delivers high-quality sound with deep bass and wireless connectivity for ultimate convenience.",
-      "status": "Sale"
     }
+    
   ]
-  
