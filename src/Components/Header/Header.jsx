@@ -10,6 +10,7 @@ import { useState } from "react";
 
 const Header = () => {
     const [search, setSearch] = useState(false);
+    const [account, setAccount] = useState(false);
     const [taka, setTaka] = useState("BDT");
     const [lang, setLang] = useState("En");
     return (
@@ -28,7 +29,7 @@ const Header = () => {
                             <p>Find a Store</p>
                         </button>
                         <div>
-                            <select  value={taka} onChange={(e) => setTaka(e.target.value)} name="" id="" className="hover:border-b cursor-pointer">
+                            <select value={taka} onChange={(e) => setTaka(e.target.value)} name="" id="" className="hover:border-b cursor-pointer">
                                 <option value="AED">AED</option>
                                 <option value="AUD">AUD</option>
                                 <option value="BDT">BDT</option>
@@ -38,7 +39,7 @@ const Header = () => {
                             </select>
                         </div>
                         <div>
-                            <select value={lang} onChange={(e) => setLang(e.target.value)}  name="" id="" className="hover:border-b cursor-pointer">
+                            <select value={lang} onChange={(e) => setLang(e.target.value)} name="" id="" className="hover:border-b cursor-pointer">
                                 <option value="En">En</option>
                                 <option value="Bn">Bn</option>
                                 <option value="Fr">Fr</option>
@@ -55,52 +56,65 @@ const Header = () => {
                 </Link>
 
                 <div className="font-inter flex gap-2 md:gap-8">
-                    <Link to={'/'} className="hover:text-gray-300 active:scale-95 transition-all">Home</Link>
+                    <Link to={'/'} className="hover:text-[#B4976C] active:scale-95 transition-all">Home</Link>
                     <div className="flex justify-center items-end gap-2">
-                        <Link className="hover:text-gray-300 active:scale-95 transition-all">Shop</Link>
+                        <Link className="hover:text-[#B4976C] active:scale-95 transition-all">Shop</Link>
                         <IoIosArrowDown />
                     </div>
                     <div className="flex justify-center items-end gap-2">
-                        <Link to={"/products"} className="hover:text-gray-300 active:scale-95 transition-all">Products</Link>
+                        <Link to={"/products"} className="hover:text-[#B4976C] active:scale-95 transition-all">Products</Link>
                         <IoIosArrowDown />
                     </div>
                     <div className="flex justify-center items-end gap-2">
-                        <Link className="hover:text-gray-300 active:scale-95 transition-all">Pages</Link>
+                        <Link className="hover:text-[#B4976C] active:scale-95 transition-all">Pages</Link>
                         <IoIosArrowDown />
                     </div>
-                    <Link className="hover:text-gray-300 active:scale-95 transition-all">Contact</Link>
+                    <Link className="hover:text-[#B4976C] active:scale-95 transition-all">Contact</Link>
                 </div>
 
-                <div className="text-2xl flex gap-4">
-                    <button onClick={() => { setSearch(!search) }} className="hover:text-gray-300 active:scale-95 cursor-pointer transition-all">
+                <div className="flex gap-4">
+                    <button onClick={() => { setSearch(!search) }} className="hover:text-[#B4976C] active:scale-95 cursor-pointer transition-all text-2xl">
                         <FiSearch />
                     </button>
-                    <button className="hover:text-gray-300 active:scale-95 cursor-pointer transition-all">
+                    <button className="hover:text-[#B4976C] active:scale-95 cursor-pointer transition-all text-2xl">
                         <FaRegHeart />
                     </button>
-                    <button className="hover:text-gray-300 active:scale-95 cursor-pointer transition-all">
+                    <button className="hover:text-[#B4976C] active:scale-95 cursor-pointer transition-all text-2xl">
                         <BsCart3 />
                     </button>
 
                     <span className="border border-gray-400 mx-2"></span>
 
-                    <button className="cursor-pointer active:scale-95 transition-all flex justify-center items-center gap-1">
-                        <img className="bg-gray-300 rounded-full h-10 w-10" alt="" />
-                        <div className="font-open-sans">
-                            <p className="text-xs text-gray-300">Hi, Sujoy Das</p>
-                            <p className="text-[15px]">My Account</p>
-                        </div>
-                    </button>
+                    <div className="relative">
+                        <button onClick={()=>{setAccount(!account)}} className="cursor-pointer active:scale-95 transition-all flex justify-center items-center gap-1">
+                            <img className="bg-gray-300 rounded-full h-10 w-10" alt="" />
+                            <div className="font-open-sans">
+                                <p className="text-xs text-gray-300">Hi, Sujoy Das</p>
+                                <p className="text-[15px]">My Account</p>
+                            </div>
+                        </button>
+                        {account &&
+                            <div  onClick={()=>{setAccount(!account)}} className="flex flex-col gap-1 font-medium text-[15px] absolute mt-3 p-5  z-20 bg-[#1A1C1E] border  font-open-sans rounded-lg">
+                                <Link className="hover:text-[#B4976C] transition-all">Profile</Link>
+                                <Link className="hover:text-[#B4976C] transition-all">My orders</Link>
+                                <Link className="hover:text-[#B4976C] transition-all">Settings</Link>
+                                <Link to={"/login"} className="hover:text-[#B4976C] transition-all">LogIn</Link>
+                                <Link className="hover:text-[#B4976C] transition-all">Logout</Link>
+                            </div>
+                        }
+                    </div>
                 </div>
             </nav>
+
+
             {search && <div className="h-screen fixed z-10 w-full top-0">
                 <div className="bg-gray-700 min-h-56 flex justify-center items-center ">
                     <div className="relative ">
                         <input type="text" className="border rounded-full px-10 w-xl py-4 " placeholder="Search Product Here" />
                         <button className="bg-[#B4976C] flex justify-center items-center gap-2 absolute cursor-pointer active:scale-95 transition-all font-medium hover:bg-gray-500 top-2 right-2 rounded-full py-2 px-5"><FiSearch />Search</button>
                     </div>
-                    <button onClick={()=>{setSearch(!search)}}>
-                        <IoMdClose className="text-3xl rounded-full ml-3 border p-1 cursor-pointer"/>
+                    <button onClick={() => { setSearch(!search) }}>
+                        <IoMdClose className="text-3xl rounded-full ml-3 border p-1 cursor-pointer" />
                     </button>
                 </div>
             </div>
