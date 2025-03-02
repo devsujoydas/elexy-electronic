@@ -2,10 +2,10 @@
 const SmartGrid = () => {
     return (
         <div className='bg-white'>
-            <div className='md:w-7xl md:mx-auto mx-5 py-20 grid md:grid-cols-3 grid-cols-1  gap-5'>
+            <div className='md:w-7xl  md:mx-auto mx-5 py-20 grid md:grid-cols-3 grid-cols-1  md:gap-5'>
 
-                <div className='overflow-hidden  md:col-span-1   rounded-2xl cursor-pointer relative'>
-                    <img className=' hover:scale-110 duration-500 h-full  transition-all rounded-2xl' src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-1-image.png?v=1713851588&width=550" alt="" />
+                <div className='   mb-5 md:mb-0 md:col-span-1 rounded-2xl cursor-pointer relative'>
+                    <img className=' hover:scale-110   duration-500 h-full  transition-all rounded-2xl' src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-h2-m-1-image.png?v=1713851588&width=550" alt="" />
                     <div className="text-center absolute top-10 left-25">
                         <h1 className="font-bold text-2xl">Smart Sound With <br /> Smart System</h1>
                         <button className="font-inter font-semibold underline">Buy Now</button>
