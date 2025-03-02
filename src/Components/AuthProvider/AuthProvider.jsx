@@ -1,5 +1,5 @@
 import { createContext, useEffect, useState } from "react"
-import {  GoogleAuthProvider, onAuthStateChanged, signInWithPopup, signOut } from "firebase/auth";
+import { createUserWithEmailAndPassword, deleteUser, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
 export const AuthContext = createContext(null)
 
@@ -15,16 +15,36 @@ const AuthProvider = ({ children }) => {
     }, [])
 
     const googleProvider = new GoogleAuthProvider();
-
-    const signInWithGoogle = () => {
-        // setLoading(true);
+    const loginGoogle = () => {
         return signInWithPopup(auth, googleProvider)
     }
 
-    const signOutUser = () => {
-        // setLoading(true);
+    // for create user using email and pass 
+    const createUser = (email, password) => {
+        return createUserWithEmailAndPassword(auth, email, password)
+    }
+
+    // login user
+    const loginUser = (email, password) => {
+        return signInWithEmailAndPassword(auth, email, password)
+    }
+
+    // for email varification 
+    const emailVarification = () => {
+        return sendEmailVerification(auth.currentUser)
+    }
+
+    // logoutuser
+    const logoutUser = () => {
         return signOut(auth)
     }
+
+    // for delete the user 
+    const deleteAccount = () => {
+        return deleteUser(user)
+    }
+
+
 
     useEffect(() => {
         const unSubscribe = onAuthStateChanged(auth, currentUser => {
@@ -45,8 +65,12 @@ const AuthProvider = ({ children }) => {
     const dataContext = {
         user,
         products,
-        signInWithGoogle,
-        signOutUser
+        createUser,
+        loginUser,
+        logoutUser,
+        loginGoogle,
+        emailVarification,
+        deleteAccount
     }
 
 

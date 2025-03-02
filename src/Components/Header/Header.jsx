@@ -6,9 +6,11 @@ import { GoLocation } from "react-icons/go";
 import { FaLocationCrosshairs } from "react-icons/fa6";
 import { IoIosArrowDown } from "react-icons/io";
 import { IoMdClose } from "react-icons/io";
-import { useState } from "react";
+import { useContext, useState } from "react";
+import { AuthContext } from "../AuthProvider/AuthProvider";
 
 const Header = () => {
+    const { user, logoutUser } = useContext(AuthContext)
     const [search, setSearch] = useState(false);
     const [account, setAccount] = useState(false);
     const [taka, setTaka] = useState("BDT");
@@ -85,24 +87,30 @@ const Header = () => {
 
                     <span className="border border-gray-400 mx-2"></span>
 
-                    <div className="relative">
-                        <button onClick={()=>{setAccount(!account)}} className="cursor-pointer active:scale-95 transition-all flex justify-center items-center gap-1">
-                            <img className="bg-gray-300 rounded-full h-10 w-10" alt="" />
-                            <div className="font-open-sans">
-                                <p className="text-xs text-gray-300">Hi, Sujoy Das</p>
-                                <p className="text-[15px]">My Account</p>
+                    {
+                        user
+                            ?
+
+                            <div className="relative">
+                                <button onClick={() => { setAccount(!account) }} className="cursor-pointer active:scale-95 transition-all flex justify-center items-center gap-1">
+                                    <img className="bg-gray-300 rounded-full h-10 w-10" src={user?.photoURL} alt="" />
+                                    <div className="font-open-sans">
+                                        <p className="text-xs text-gray-300">Hi, {user?.displayName}</p>
+                                        <p className="text-[15px]">My Account</p>
+                                    </div>
+                                </button>
+                                {account &&
+                                    <div onClick={() => { setAccount(!account) }} className="flex flex-col gap-1 font-medium text-[15px] absolute mt-3 p-5  z-20 bg-[#1A1C1E] border  font-open-sans rounded-lg">
+                                        <Link className="hover:text-[#B4976C] transition-all">Profile</Link>
+                                        <Link className="hover:text-[#B4976C] transition-all">My orders</Link>
+                                        <Link className="hover:text-[#B4976C] transition-all">Settings</Link>
+                                        <p onClick={() => { logoutUser() }} className="hover:text-[#B4976C] transition-all cursor-pointer">Logout</p>
+                                    </div>
+                                }
                             </div>
-                        </button>
-                        {account &&
-                            <div  onClick={()=>{setAccount(!account)}} className="flex flex-col gap-1 font-medium text-[15px] absolute mt-3 p-5  z-20 bg-[#1A1C1E] border  font-open-sans rounded-lg">
-                                <Link className="hover:text-[#B4976C] transition-all">Profile</Link>
-                                <Link className="hover:text-[#B4976C] transition-all">My orders</Link>
-                                <Link className="hover:text-[#B4976C] transition-all">Settings</Link>
-                                <Link to={"/login"} className="hover:text-[#B4976C] transition-all">LogIn</Link>
-                                <Link className="hover:text-[#B4976C] transition-all">Logout</Link>
-                            </div>
-                        }
-                    </div>
+                            :
+                            <Link to={"/login"} className="hover:text-[#B4976C] active:scale-95 transition-all">LogIn</Link>
+                    }
                 </div>
             </nav>
 
