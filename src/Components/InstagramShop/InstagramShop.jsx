@@ -1,5 +1,4 @@
 
-
 const InstagramShop = () => {
     return (
         <div className="md:px-0 px-5 bg-[#333333] pb-10 md:pb-0">

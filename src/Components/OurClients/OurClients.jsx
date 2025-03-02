@@ -21,7 +21,6 @@ const OurClients = () => {
                     </div>
                     <Link to={'/'} className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all'>View More</Link>
                 </div>
-
                 <Swiper
                     slidesPerView={1}
                     spaceBetween={10}
@@ -71,8 +70,6 @@ const OurClients = () => {
                         </div>
                     </SwiperSlide>
 
-
-
                     <SwiperSlide>
                         <div>
                             <div className="flex items-center text-xl text-[#B4976C]">
@@ -96,8 +93,6 @@ const OurClients = () => {
                             <p className="text-gray-400">CEO Deplex Group</p>
                         </div>
                     </SwiperSlide>
-
-
 
                 </Swiper>
             </div>
