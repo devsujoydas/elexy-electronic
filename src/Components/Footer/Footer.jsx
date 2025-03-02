@@ -13,7 +13,7 @@ const Footer = () => {
           <h1 className="md:text-5xl text-xl font-semibold md:py-20 py-10 font-open-sans">Subscribe our Newsletter and get <br /> all of our update</h1>
           <div className="relative pb-10 md:pb-0">
             <input type="text" className="border rounded-full px-10 lg:w-md md:py-6 py-3" placeholder="Enter Email" />
-            <button className="bg-[#B4976C] absolute top-2 right-2 active:scale-95 transition-all rounded-full py-4 cursor-pointer px-5">Submit Now</button>
+            <button className="bg-[#B4976C] absolute top-2 right-2 active:scale-95 transition-all rounded-full md:py-4 py-1 cursor-pointer px-5">Submit Now</button>
           </div>
         </div>
 
@@ -58,7 +58,7 @@ const Footer = () => {
             <Link className="hover:text-gray-400 transition-all" to={''}>Create account</Link>
           </div>
 
-          <div className="flex flex-col gap-2">
+          <div id="contact" className="flex flex-col gap-2">
             <h1 className="text-gray-400 text-xl">Contact Info</h1>
             <p>70 Washington Square South, New York, NY 10012, United States</p>
             <p>+12345 678 910</p>

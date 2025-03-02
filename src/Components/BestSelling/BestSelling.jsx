@@ -15,7 +15,8 @@ const BestSelling = () => {
                     <Link to={'/'} className='px-7 py-3 border rounded-full cursor-pointer active:scale-95 hover:-translate-y-1 transition-all'>Shop Now</Link>
                 </div>
 
-                <div className="flex justify-center items-center gap-5 md:flex-row flex-col">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-5
+                ">
 
                     <div className="relative">
                         <div className='overflow-hidden rounded-2xl cursor-pointer'>
@@ -42,6 +43,44 @@ const BestSelling = () => {
                     <div className="relative">
                         <div className='overflow-hidden rounded-2xl cursor-pointer'>
                             <img className='rounded-2xl h-full hover:scale-110 duration-500 transition-all' src="https://elexy-demo.myshopify.com/cdn/shop/files/banner-image-9.png?v=1710397157&width=550" alt="" />
+                        </div>
+                        <div className="text-center absolute top-25 left-10">
+                            <h1 className="text-[#e9c38a]">START FROM $899</h1>
+                            <h1 className="font-bold text-2xl">New Camera <br /> Collections</h1>
+                            <button className="font-inter font-semibold underline">Buy Now</button>
+                        </div>
+                    </div>
+
+
+
+
+
+                    <div className="relative">
+                        <div className='overflow-hidden rounded-2xl cursor-pointer'>
+                            <img className='rounded-2xl h-full hover:scale-110 duration-500 transition-all' src="https://elexy-demo.myshopify.com/cdn/shop/files/instagram-1.png?v=1710752282" alt="" />
+                        </div>
+                        <div className="text-center absolute top-25 left-10">
+                            <h1 className="text-[#e9c38a]">START FROM $899</h1>
+                            <h1 className="font-bold text-2xl">New Camera <br /> Collections</h1>
+                            <button className="font-inter font-semibold underline">Buy Now</button>
+                        </div>
+                    </div>
+
+                    <div className="relative">
+                        <div className='overflow-hidden rounded-2xl cursor-pointer'>
+                            <img className='rounded-2xl h-full hover:scale-110 duration-500 transition-all' src="https://elexy-demo.myshopify.com/cdn/shop/files/instagram-2.png?v=1710752841" alt="" />
+                        </div>
+                        <div className="text-center absolute top-25 left-10">
+                            <h1 className="text-[#e9c38a]">START FROM $899</h1>
+                            <h1 className="font-bold text-2xl">New Camera <br /> Collections</h1>
+                            <button className="font-inter font-semibold underline">Buy Now</button>
+                        </div>
+                    </div>
+
+
+                    <div className="relative">
+                        <div className='overflow-hidden rounded-2xl cursor-pointer'>
+                            <img className='rounded-2xl h-full hover:scale-110 duration-500 transition-all' src="https://elexy-demo.myshopify.com/cdn/shop/files/instagram-4.png?v=1710752841" alt="" />
                         </div>
                         <div className="text-center absolute top-25 left-10">
                             <h1 className="text-[#e9c38a]">START FROM $899</h1>

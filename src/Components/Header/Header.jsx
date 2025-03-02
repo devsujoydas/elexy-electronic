@@ -71,7 +71,7 @@ const Header = () => {
                         <Link className="hover:text-[#B4976C] active:scale-95 transition-all">Pages</Link>
                         <IoIosArrowDown />
                     </div>
-                    <Link className="hover:text-[#B4976C] active:scale-95 transition-all">Contact</Link>
+                    <Link to={"#contact"} className="hover:text-[#B4976C] active:scale-95 transition-all">Contact</Link>
                 </div>
 
                 <div className="flex gap-4">
