@@ -22,9 +22,9 @@ const Header = () => {
         <div className="relative">
             {/* header  */}
             <div className=" bg-[#121212] text-gray-300 py-4  font-inter">
-                <div className="flex flex-col lg:flex-row md:justify-between max-w-7xl mx-auto">
+                <div className="flex flex-col lg:flex-row md:justify-between  max-w-7xl mx-auto">
                     <p className="text-center">Free Delivery on orders over $260</p>
-                    <div className="flex gap-3 ">
+                    <div className="flex gap-3  ">
                         <button className="flex gap-2 justify-center items-center cursor-pointer">
                             <FaLocationCrosshairs />
                             <p>Track your Order</p>
@@ -59,15 +59,15 @@ const Header = () => {
 
                 <div className="flex justify-between items-center">
                     <Link to={''} className="active:scale-95 transition-all">
-                        <img src="/public/assets/lgo.png" alt="" />
+                        <img src="https://elexy-demo.myshopify.com/cdn/shop/files/lgo.png?v=1709012574&width=250" alt="" />
                     </Link>
 
                     <button onClick={() => { setNavSm(!navSm) }} className="text-5xl block md:hidden active:scale-95 transition-all duration-500">
                         {navSm
                             ?
-                            <IoCloseSharp />
-                            :
                             <IoMdMenu />
+                            :
+                            <IoCloseSharp />
                         }
                     </button>
                 </div>
@@ -133,7 +133,7 @@ const Header = () => {
                 </div>
 
                 {/* nav for sm  */}
-                {navSm &&
+                {navSm ||
                     <div className="flex md:hidden flex-col md:gap-10 items-center justify-center gap-5">
                         <div onClick={() => { setNavSm(!navSm) }} className="font-inter flex md:flex-row flex-col  gap-2 md:gap-8">
                             <div className="flex justify-center items-end gap-2">
