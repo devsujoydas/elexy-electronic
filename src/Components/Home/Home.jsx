@@ -4,6 +4,8 @@ import Recommended from "../Recommended/Recommended.jsx"
 import Marque from "../PromoMarquee/PromoMarquee.jsx"
 import SmartGrid from "../SmartGrid/SmartGrid.jsx"
 import OurClients from "../OurClients/OurClients.jsx"
+import InstagramShop from "../InstagramShop/InstagramShop.jsx"
+import BestSelling from "../BestSelling/BestSelling.jsx"
 
 const Home = () => {
   return (
@@ -11,9 +13,12 @@ const Home = () => {
       <Hero />
       <Category />
       <Recommended />
-      <Marque/>
-      <SmartGrid/>
-      <OurClients/>
+      <BestSelling/>
+      <Marque />
+      <SmartGrid />
+      <OurClients />
+      <InstagramShop />
+
     </div>
   )
 }

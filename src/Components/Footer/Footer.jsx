@@ -66,19 +66,19 @@ const Footer = () => {
 
             <div className="flex text-4xl mt-2 justify-between">
               <Link>
-                <FaInstagram className="border rounded-full p-2 hover:text-gray-400 transition-all" />
+                <FaInstagram className="border rounded-full p-2 hover:text-gray-400 cursor-pointer hover:skew-6 duration-500 transition-all" />
               </Link>
               <Link>
-                <FaFacebookF className="border rounded-full p-2 hover:text-gray-400 transition-all" />
+                <FaFacebookF className="border rounded-full p-2 hover:text-gray-400 cursor-pointer hover:skew-6 duration-500 transition-all" />
               </Link>
               <Link>
-                <FiYoutube className="border rounded-full p-2 hover:text-gray-400 transition-all" />
+                <FiYoutube className="border rounded-full p-2 hover:text-gray-400 cursor-pointer hover:skew-6 duration-500 transition-all" />
               </Link>
               <Link>
-                <FaWhatsapp className="border rounded-full p-2 hover:text-gray-400 transition-all" />
+                <FaWhatsapp className="border rounded-full p-2 hover:text-gray-400 cursor-pointer hover:skew-6 duration-500 transition-all" />
               </Link>
               <Link>
-                <FaPinterest className="border rounded-full p-2 hover:text-gray-400 transition-all" />
+                <FaPinterest className="border rounded-full p-2 hover:text-gray-400 cursor-pointer hover:skew-6 duration-500 transition-all" />
               </Link>
             </div>
 
@@ -90,12 +90,12 @@ const Footer = () => {
         <div className=" flex flex-col gap-2 lg:flex-row justify-between max-w-7xl mx-auto">
           <h1 className="">© 2025, Elexy Store By <a href="https://www.facebook.com/sujoydas36">Sujoy Das</a></h1>
           <div className="flex justify-between gap-2">
-            <img className="w-2xl" src="/public/assets/payment/paypal.svg" alt="" />
-            <img className="w-2xl" src="/public/assets/payment/download (11).svg" alt="" />
-            <img className="w-2xl" src="/public/assets/payment/download (12).svg" alt="" />
-            <img className="w-2xl" src="/public/assets/payment/download (14).svg" alt="" />
-            <img className="w-2xl" src="/public/assets/payment/download (15).svg" alt="" />
-            <img className="w-2xl" src="/public/assets/payment/download (16).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/paypal.svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (11).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (12).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (14).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (15).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (16).svg" alt="" />
           </div>
         </div>
       </div>
