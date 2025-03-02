@@ -9,7 +9,7 @@ const AuthProvider = ({ children }) => {
     const [user, setUser] = useState(null);
 
     useEffect(() => {
-        fetch('/public/product.json')
+        fetch('./product.json')
             .then(res => res.json())
             .then(data => setProducts(data))
     }, [])

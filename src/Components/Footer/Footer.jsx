@@ -7,7 +7,7 @@ import { FaPinterest } from "react-icons/fa6";
 
 const Footer = () => {
   return (
-    <div className="bg-[#121212] min-h-[60vh] px-10">
+    <div id="contact" className="bg-[#121212] min-h-[60vh] px-10">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-center">
           <h1 className="md:text-5xl text-xl font-semibold md:py-20 py-10 font-open-sans">Subscribe our Newsletter and get <br /> all of our update</h1>
@@ -58,7 +58,7 @@ const Footer = () => {
             <Link className="hover:text-gray-400 transition-all" to={''}>Create account</Link>
           </div>
 
-          <div id="contact" className="flex flex-col gap-2">
+          <div  className="flex flex-col gap-2">
             <h1 className="text-gray-400 text-xl">Contact Info</h1>
             <p>70 Washington Square South, New York, NY 10012, United States</p>
             <p>+12345 678 910</p>

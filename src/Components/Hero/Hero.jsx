@@ -28,7 +28,7 @@ const Hero = () => {
         modules={[Autoplay, Pagination]}
         className="mySwiper"
       >
-        <SwiperSlide className='hero-bg-1 md:p-0 p-5' >
+        <SwiperSlide className='hero-bg-1  p-5' >
           <div className='md:min-h-[75vh]  max-w-7xl flex items-center mx-auto' >
             <div className=' w-fit grid gap-5'>
               <p className='text-[#B4976C] md:text-xl text-xs '>DISCOUNT UPTO 75%, HURRY UP!</p>
@@ -42,7 +42,7 @@ const Hero = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className='hero-bg-2 md:p-0 p-5'>
+        <SwiperSlide className='hero-bg-2  p-5'>
           <div className='md:min-h-[75vh]  w-7xl flex items-center mx-auto' >
             <div className=' w-fit grid gap-5'>
               <p className='text-[#B4976C] md:text-xl text-xs '>LET&apos;S BE SMARTER</p>
@@ -57,7 +57,7 @@ const Hero = () => {
           </div>
         </SwiperSlide>
 
-        <SwiperSlide className='hero-bg-3 md:p-0 p-5'>
+        <SwiperSlide className='hero-bg-3  p-5'>
           <div className='md:min-h-[75vh]  w-7xl flex items-center mx-auto' >
             <div className=' w-fit grid gap-5'>
               <p className='text-[#B4976C] md:text-xl text-xs '>DISCOUNT UPTO 75%, HURRY UP!</p>
