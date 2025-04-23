@@ -1,11 +1,9 @@
 import { Link } from "react-router-dom"
 import { Swiper, SwiperSlide } from 'swiper/react';
-// Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/pagination';
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { Autoplay } from 'swiper/modules';
-
 
 const OurClients = () => {
     return (

@@ -28,7 +28,6 @@ const Login = () => {
                 setLogError(error.message)
             })
     }
-
     const loginGoogleHandler = (e) => {
         setSuccess("")
         setLogError("")
