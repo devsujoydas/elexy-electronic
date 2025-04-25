@@ -1,6 +1,6 @@
 import { createContext, useEffect, useState } from "react"
 import { createUserWithEmailAndPassword, deleteUser, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
-import auth from "../Firebase/Firebase.config";
+import auth from "../../Firebase/firebase.config";
 // eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext(null)
 
