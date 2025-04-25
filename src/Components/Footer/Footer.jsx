@@ -90,12 +90,12 @@ const Footer = () => {
         <div className=" flex flex-col gap-2 lg:flex-row justify-between max-w-7xl mx-auto">
           <h1 className="">© 2025, Elexy Store By <a href="https://www.facebook.com/sujoydas36">Sujoy Das</a></h1>
           <div className="flex justify-between gap-2">
-            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/paypal.svg" alt="" />
-            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (11).svg" alt="" />
-            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (12).svg" alt="" />
-            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (14).svg" alt="" />
-            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (15).svg" alt="" />
-            <img className="cursor-pointer hover:rotate-6 transition-all" src="/public/assets/payment/download (16).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/assets/payment/paypal.svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/assets/payment/download (11).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/assets/payment/download (12).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/assets/payment/download (14).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/assets/payment/download (15).svg" alt="" />
+            <img className="cursor-pointer hover:rotate-6 transition-all" src="/assets/payment/download (16).svg" alt="" />
           </div>
         </div>
       </div>

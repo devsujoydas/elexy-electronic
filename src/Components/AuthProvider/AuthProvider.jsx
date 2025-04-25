@@ -1,6 +1,7 @@
 import { createContext, useEffect, useState } from "react"
 import { createUserWithEmailAndPassword, deleteUser, GoogleAuthProvider, onAuthStateChanged, sendEmailVerification, signInWithEmailAndPassword, signInWithPopup, signOut } from "firebase/auth";
 import auth from "../Firebase/Firebase.config";
+// eslint-disable-next-line react-refresh/only-export-components
 export const AuthContext = createContext(null)
 
 // eslint-disable-next-line react/prop-types
